@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.PrimaryController">
+   <children>
+      <AnchorPane layoutY="94.0" prefHeight="306.0" prefWidth="700.0" style="-fx-background-color: fafafa;">
+         <children>
+            <PasswordField fx:id="password_field" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="188.0" layoutY="177.0" prefHeight="25.0" prefWidth="338.0" promptText="Пароль" scaleShape="false" style="-fx-border-radius: 5;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </PasswordField>
+            <TextField fx:id="login_field" cacheShape="false" centerShape="false" layoutX="188.0" layoutY="122.0" prefHeight="31.0" prefWidth="338.0" promptText="Логин" scaleShape="false" style="-fx-background-radius: 5;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Label alignment="CENTER" layoutX="191.0" layoutY="52.0" prefHeight="70.0" prefWidth="319.0" text="Authorization" textFill="#868686">
+               <font>
+                  <Font name="Gabriola" size="40.0" />
+               </font>
+            </Label>
+            <Button fx:id="authSignButton" layoutX="280.0" layoutY="236.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="140.0" style="-fx-background-color: #FAFAFA; -fx-border-color: silver; -fx-border-radius: 5;" text="Sign in" textFill="#0033ff">
+               <font>
+                  <Font name="System Italic" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow color="#9099ff" height="50.65" radius="20.377499999999998" width="32.86" />
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="104.0" prefHeight="90.0" prefWidth="364.0" text="yourDiary" textAlignment="CENTER">
+         <font>
+            <Font name="Lucida Calligraphy Italic" size="42.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.21904761904761905" startY="0.5380952380952381">
+               <stops>
+                  <Stop color="#ff8f8f" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="loginSignUpButton" layoutX="446.0" layoutY="32.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="209.0" style="-fx-background-color: #FAFAFA; -fx-background-radius: 5;" text="Sign up" textFill="#2e3348">
+         <font>
+            <Font name="System Italic" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" height="35.83" radius="18.895" width="41.75" />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

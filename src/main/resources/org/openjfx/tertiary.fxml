@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.TertiaryController">
+    <children>
+        <AnchorPane layoutY="94.0" prefHeight="306.0" prefWidth="700.0" style="-fx-background-color: fafafa;">
+         <children>
+            <ImageView fx:id="events" fitHeight="164.0" fitWidth="164.0" layoutX="482.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../PinClipart.com_october-calendar-clip-art_819138.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="notes" fitHeight="164.0" fitWidth="164.0" layoutX="262.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../PinClipart.com_tipi-clipart_223820.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="contacts" fitHeight="164.0" fitWidth="170.0" layoutX="40.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../PinClipart.com_flat-open-book-clip_654872.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="56.0" layoutY="201.0" prefHeight="32.0" prefWidth="132.0" text="Contacts" textAlignment="CENTER" textFill="#ff5252">
+               <font>
+                  <Font name="Goudy Stout" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label alignment="CENTER" layoutX="291.0" layoutY="201.0" prefHeight="32.0" prefWidth="107.0" text="Notes" textFill="#ff8c00">
+               <font>
+                  <Font name="Goudy Stout" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label alignment="CENTER" layoutX="498.0" layoutY="201.0" prefHeight="32.0" prefWidth="132.0" text="FINANCE" textFill="#00a4ff">
+               <font>
+                  <Font name="Goudy Stout" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children></AnchorPane>
+        <Label fx:id="tertiaryLabel" layoutX="104.0" prefHeight="90.0" prefWidth="364.0" text="yourDiary" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Lucida Calligraphy Italic" size="42.0" />
+            </font>
+        </Label>
+      <ImageView fx:id="backId1" fitHeight="56.0" fitWidth="56.0" layoutX="14.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../arrow.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" contrast="1.0" hue="-0.05" saturation="-0.02" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+    </children>
+</AnchorPane>

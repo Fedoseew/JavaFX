@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.SecondaryController">
+    <children>
+        <AnchorPane layoutY="94.0" prefHeight="306.0" prefWidth="700.0" style="-fx-background-color: fafafa;">
+            <children>
+                <PasswordField fx:id="password_field" layoutX="27.0" layoutY="196.0" prefHeight="25.0" prefWidth="338.0" promptText="Пароль" style="-fx-border-radius: 5;">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </PasswordField>
+                <Button fx:id="SignUpButton" layoutX="298.0" layoutY="246.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="104.0" style="-fx-background-color: #FAFAFA; -fx-border-color: silver; -fx-border-radius: 5;" text="Sign up" textFill="#2e3348">
+                    <font>
+                        <Font name="System Italic" size="20.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+               <tooltip>
+                  <Tooltip fx:id="loginexist" text="логин уже существует" />
+               </tooltip>
+               <effect>
+                  <DropShadow color="#0011ff" height="34.35" radius="17.7875" width="38.8">
+                     <input>
+                        <ColorAdjust brightness="-0.02" contrast="0.05" hue="0.71" saturation="0.02" />
+                     </input>
+                  </DropShadow>
+               </effect>
+                </Button>
+            <TextField fx:id="signUpFirstName" layoutX="27.0" layoutY="20.0" prefHeight="31.0" prefWidth="338.0" promptText="Имя" style="-fx-background-radius: 5;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="signUpLastName" layoutX="27.0" layoutY="66.0" prefHeight="31.0" prefWidth="338.0" promptText="Фамилия" style="-fx-background-radius: 5;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="login_field" layoutX="27.0" layoutY="155.0" prefHeight="31.0" prefWidth="338.0" promptText="Логин" style="-fx-background-radius: 5;">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <CheckBox fx:id="signUpCheckBoxMale" layoutX="44.0" layoutY="122.0" mnemonicParsing="false" text="Мужчина " />
+            <CheckBox fx:id="signUpCheckBoxFemale" layoutX="158.0" layoutY="122.0" mnemonicParsing="false" text="Женщина" />
+            </children>
+        </AnchorPane>
+        <Label layoutX="104.0" prefHeight="90.0" prefWidth="364.0" text="yourDiary" textAlignment="CENTER">
+            <font>
+                <Font name="Lucida Calligraphy Italic" size="42.0" />
+            </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#ff8888" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+        </Label>
+      <ImageView fx:id="backId" fitHeight="56.0" fitWidth="56.0" layoutX="14.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../arrow.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" contrast="1.0" hue="-0.05" saturation="-0.02" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+    </children>
+</AnchorPane>

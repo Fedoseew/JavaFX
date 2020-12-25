@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.ContactsController">
+    <children>
+        <AnchorPane layoutY="94.0" prefHeight="306.0" prefWidth="700.0" style="-fx-background-color: fafafa;">
+         <children>
+            <Pane layoutX="497.0" opacity="0.55" prefHeight="323.0" prefWidth="203.0" style="-fx-background-color: silver;">
+               <children>
+                  <TextField fx:id="contactsname" layoutX="27.0" layoutY="72.0" promptText="Имя" style="-fx-background-color: white;" />
+                  <TextField fx:id="contactsphone" layoutX="27.0" layoutY="111.0" promptText="Номер телефона" style="-fx-background-color: white;" />
+                  <TextField fx:id="contactsemail" layoutX="27.0" layoutY="153.0" promptText="Электронная почта" style="-fx-background-color: white;" />
+                  <TextField fx:id="search" layoutX="27.0" layoutY="243.0" promptText="Поиск по таблице" />
+               </children>
+            </Pane>
+            <Line endX="-100.0" endY="281.0" layoutX="597.0" layoutY="41.0" startX="-100.0" startY="-41.0" />
+            <TableView fx:id="contactsTable" prefHeight="323.0" prefWidth="496.0" />
+            <Button fx:id="searchButton" layoutX="565.0" layoutY="278.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Найти">
+               <effect>
+                  <Lighting diffuseConstant="2.0" specularConstant="0.28" specularExponent="13.95" surfaceScale="4.87">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="287.79" color="#2e3348" elevation="61.74" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+         </children></AnchorPane>
+        <Label layoutX="104.0" prefHeight="90.0" prefWidth="364.0" text="yourDiary" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Lucida Calligraphy Italic" size="42.0" />
+            </font>
+        </Label>
+      <Label alignment="CENTER" layoutX="507.0" layoutY="121.0" prefHeight="36.0" prefWidth="185.0" text="Добавить новый " textFill="#2e3348">
+         <font>
+            <Font name="Georgia Bold" size="14.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="-1.0" contrast="-1.0" hue="-0.45" />
+         </effect>
+      </Label>
+      <ImageView fx:id="contacts" fitHeight="80.0" fitWidth="70.0" layoutX="560.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../PinClipart.com_flat-open-book-clip_654872.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Button fx:id="addContact" layoutX="562.0" layoutY="284.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Добавить">
+         <effect>
+            <Lighting diffuseConstant="2.0" specularConstant="0.28" specularExponent="13.95" surfaceScale="4.87">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="287.79" color="#2e3348" elevation="61.74" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="deleteContact" layoutX="427.0" layoutY="94.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Удалить">
+         <effect>
+            <Lighting diffuseConstant="2.0" specularConstant="0.28" specularExponent="13.95" surfaceScale="4.87">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="287.79" color="#2e3348" elevation="61.74" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <ImageView fx:id="backC" fitHeight="56.0" fitWidth="56.0" layoutX="14.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../arrow.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" contrast="1.0" hue="-0.05" saturation="-0.02" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+    </children>
+</AnchorPane>
